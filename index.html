@@ -13,7 +13,7 @@
         var video = document.getElementById("video");
         var hls = new Hls();
         hls.loadSource(
-          "https://bcovlive-a.akamaihd.net/74f665e9ff8447639d4de4b8b458d8ae/us-east-1/6058004209001/playlist_dvr.m3u8"
+          "https://funn-g1163.huibo.tv/GM/H82/chunks.m3u8?p=46&cf=1744160911&d=&ip=133.106.206.78&e=1749161511&h=37acb96d998871e5a683aa13886bc596"
         );
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -21,7 +21,7 @@
         });
       } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
         video.src =
-          "https://bcovlive-a.akamaihd.net/74f665e9ff8447639d4de4b8b458d8ae/us-east-1/6058004209001/playlist_dvr.m3u8";
+          "https://funn-g1163.huibo.tv/GM/H82/chunks.m3u8?p=46&cf=1744160911&d=&ip=133.106.206.78&e=1749161511&h=37acb96d998871e5a683aa13886bc596";
         video.addEventListener("canplay", function () {
           video.play();
         });
